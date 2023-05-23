@@ -40,18 +40,16 @@ export default function ForgetPassword({ handleAuthMode,handleOpenAlert }) {
       </Box>
       <Box
         sx={{
-          // width: 300,
-          mx: 'auto', // margin left & right
-          my: 4, // margin top & botom
-          py: 3, // padding top & bottom
-          px: 2, // padding left & right
+          mx: 'auto', 
+          my: 4, 
+          py: 3, 
+          px: 2, 
           display: 'flex',
           flexDirection: 'column',
           gap: 2,
           borderRadius: 'sm',
           boxShadow: 'xl',
         }}
-      // variant="outlined"
       >
         <TextField
           required

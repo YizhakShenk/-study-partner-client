@@ -77,7 +77,6 @@ export default function Filters({ setPosts, handleRendering }) {
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <Box>
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Grid
             maxWidth={{ xs: "100%", sm: "80%", md: "80%", lg: '60%' }}
@@ -160,7 +159,6 @@ export default function Filters({ setPosts, handleRendering }) {
             clearFilter={clearFilter}
           />}
         </Box>
-      </Box>
     </LocalizationProvider>
   );
 }

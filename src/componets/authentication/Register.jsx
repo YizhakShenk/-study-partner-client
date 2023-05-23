@@ -126,7 +126,6 @@ export default function Register({ handleOpenAlert,handleAuthMode }) {
         />
         <Box sx={{textAlign: "left" ,ml:6}}>
       <Typography variant="caption" >
-      {/* The password must contain a minimum of 8 characters that includes numbers and letters */}
       * required 8 characters that includes numbers and letters
         </Typography>
       </Box>
@@ -152,6 +151,7 @@ export default function Register({ handleOpenAlert,handleAuthMode }) {
           onChange={(event) => setLanguages(event.target.value)}
         />
         <TextField
+          required
           sx={{ m: 1 }}
           id="phone"
           label="phone number"

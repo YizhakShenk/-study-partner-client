@@ -1,7 +1,6 @@
 import { Typography, Box } from "@mui/material";
 export default function About() {
   return (
-    <div className="about">
       <Box
         sx={{
           padding: "15%",
@@ -13,17 +12,13 @@ export default function About() {
           more
         </Typography>
         <Typography variant="h6" paragraph={true}>
-          Study partner services include partner search by language, location,
-          gender, time, and rating.
+          Study partner services include partner search by subject, 
+          date, and time.
         </Typography>
         <Typography variant="subtitle2">
           This website was founded by Avi Rosenthaler and Yitzhak Shenk as a
           final project in software engineering On behalf of mivchar college
         </Typography>
-//         <Typography variant="h5">
-//           The project was built inspired by Shlomi Levinstein
-//         </Typography>
       </Box>
-    </div>
   );
 }

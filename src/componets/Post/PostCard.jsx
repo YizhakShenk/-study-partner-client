@@ -92,7 +92,6 @@ export default function PostCard({ post }) {
           </CardContent>
           <CardActions sx={{ display: "flex", justifyContent: 'flex-end' }}>
             <Button
-              // disabled={post.matched === 1}
               variant="outlined"
               size="small"
               onClick={() => {

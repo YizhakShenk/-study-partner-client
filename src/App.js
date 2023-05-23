@@ -9,7 +9,6 @@ import Home from './componets/home/Home';
 import { Experimental_CssVarsProvider as CssVarsProvider } from '@mui/material/styles';
 import axios from 'axios';
 import CssBaseline from '@mui/material/CssBaseline';
-// import theme from './style/theme';
 const urlServer = process.env.REACT_APP_URL_SERVER
 
 function App() {
@@ -50,7 +49,6 @@ function App() {
           setUserSubjects(subjects);
           setUserPosts(posts);
           setUserNotifications(notifications);
-          // setUserConnected(auth);
         }
       }
       catch (err) {
@@ -63,7 +61,6 @@ function App() {
     <div className="App">
       <CssVarsProvider>
         <CssBaseline>
-          {/* <ThemeProvider theme={theme}> */}
             <UserContext.Provider value={{ user, setUser }}>
               <UserDetailsContext.Provider value={{ userDetails, setUserDetails }}>
                 <UserSubjectsContext.Provider value={{ userSubjects, setUserSubjects }}>
@@ -75,7 +72,6 @@ function App() {
                 </UserSubjectsContext.Provider>
               </UserDetailsContext.Provider>
             </UserContext.Provider>
-          {/* </ThemeProvider> */}
         </CssBaseline>
       </CssVarsProvider>
     </div>

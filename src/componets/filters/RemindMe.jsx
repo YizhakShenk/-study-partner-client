@@ -6,22 +6,11 @@ import { Box, Typography, Card, CardContent, Button, CardActions, Alert, } from 
 import AddIcon from '@mui/icons-material/Add';
 const urlServer = process.env.REACT_APP_URL_SERVER;
 
-// const getStrDay = (date) => {
-//   return date ? `${date.$D < 10 ? "0" : ""}${date.$D}/${date.$M + 1 < 10 ? "0" : ""}${date.$M + 1}/${date.$y}` : null
-// }
-// const getStrTime = (time) => {
-//   return time ? `${time.$H < 10 ? "0" : ""}${time.$H}:${time.$m < 10 ? "0" : ""}${time.$m}` : null
-// }
-
-
 export default function RemindMe({ subName, date, time, getDateStemp, getTimeStemp, clearFilter }) {
   const { user } = useContext(UserContext);
-
-
   const [sstempSubName] = useState(subName || null);
   const [strDay] = useState(getStrDay(date));
   const [strTime] = useState(getStrTime(time));
-
   const [alertMessage, setAlertMessage] = useState('');
   const [opanAlert, setOpanAlert] = useState(false);
   const [alertMode, setAlertMode] = useState('');
