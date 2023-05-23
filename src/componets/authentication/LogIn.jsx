@@ -49,7 +49,6 @@ export default function Login({ handleAuthMode, handleCloseLogIn, handleOpenAler
         setUserSubjects(answer.data.subjects);
         setUserPosts(answer.data.posts);
         setUserNotifications(answer.data.notifications);
-        // setUserConnected(answer.data);
         handleOpenAlert('success', 'Welcome! and good luck finding a partner');
         setTimeout(() => {
           handleCloseLogIn();
@@ -71,8 +70,6 @@ export default function Login({ handleAuthMode, handleCloseLogIn, handleOpenAler
           sm: 285,
           md: 400,
         },
-        // maxWidth: 450,
-        // minWidth: 100,
         display: "flex",
         flexDirection: "column",
         gap: 5,
@@ -88,7 +85,6 @@ export default function Login({ handleAuthMode, handleCloseLogIn, handleOpenAler
       <TextField
         variant='standard'
         required
-        // error={email && !emailValid(email)}
         id="email"
         label="Email address"
         name="email"
@@ -101,7 +97,6 @@ export default function Login({ handleAuthMode, handleCloseLogIn, handleOpenAler
       <TextField
         variant='standard'
         required
-        // error={password && !passwordValid(password)}
         id="password"
         name="password"
         type="password"
