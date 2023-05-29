@@ -175,9 +175,9 @@ export default function CreatePost({ open, setOpen, editPost, setEditPost }) {
         time_to: getStrTime(timeTo) || null,
         days: days || null,
       };
-      console.log(post);
       if (!editPost) {
-        await axios.post(`${urlServer}/post/add`, post);
+        const answer = (await axios.post(`${urlServer}/post/add`, post)).data;
+        viewPost.id = answer.id
         setPosts([viewPost, ...posts]);
       } else {
         await axios.put(`${urlServer}/post/update`, post);
