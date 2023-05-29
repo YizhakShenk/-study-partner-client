@@ -34,7 +34,7 @@ export default function UserProfile() {
         console.log(err);
       }
     })();
-  }, [userId, userData]);
+  }, [userId, setUserData]);
   return (
     <Box>
       {userData ? (
